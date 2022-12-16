@@ -29,3 +29,17 @@ SELECT
 FROM silver_olist.cliente
 
 GROUP BY descUF
+
+-- COMMAND ----------
+
+SELECT 
+  descUF,
+  COUNT(distinct idClienteUnico)
+
+FROM silver_olist.cliente
+
+GROUP BY descUF
+
+-- COMMAND ----------
+
+
